@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/shape_rectangle"
+    tools:context="in.p_r_tiles.prtiles.SearchActivity">
+
+    <TextView
+        android:text="Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewSearch"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextSearchProduct"
+        android:layout_weight="1"
+        android:hint="Search by title" />
+
+    <Button
+        android:text="Seach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSearch"
+        android:layout_weight="1"
+        android:onClick="searchNow"
+        style="@android:style/Widget.Button"
+        android:background="@android:color/holo_blue_dark" />
+
+</LinearLayout>

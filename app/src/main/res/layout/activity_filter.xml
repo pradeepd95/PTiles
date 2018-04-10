@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_filter"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    tools:context="in.p_r_tiles.prtiles.FilterActivity"
+    android:background="@drawable/shape_rectangle">
+
+    <TextView
+        android:text="Order By"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewOrderBy"
+        android:textStyle="normal|bold"
+        android:textSize="18sp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerOrderBy" />
+
+    <TextView
+        android:text="Category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCategory"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerCategory" />
+
+    <Button
+        android:text="Filter Data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonFilterNow"
+        android:onClick="filterNow"
+        style="@android:style/Widget.Button"
+        android:background="@android:color/holo_blue_dark" />
+</LinearLayout>
